@@ -1,0 +1,24 @@
+body {background-color:silver;
+background-repeat: no-repeat;
+background-position:
+right top;
+margin-right: 200px;
+color:brown;
+}
+p
+{background-color:pink;
+ text-align:center;
+color:blue;
+}
+h1
+{ font-family:algerian;
+text-decoration:underline;
+text-size:
+font-size:100px;
+color:brown;
+}
+h2
+{text-decoration:overline;
+ text-align:center;
+color:orange;
+}

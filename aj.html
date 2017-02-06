@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>Mypage</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="my.css" type="text/css" media="screen,projection" />
+<style type="text/css">
+<!--
+.style1 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript"/>
+ function validator()
+{ 
+var x=document.myform.Email.value;
+var re=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+var y=document.myform.firstname.value;
+var z=document.myform.lastname.value;
+var rer=/^[A-Za-z\s]{1,}[\.]{0,1}[A-Za-z\s]{0,}$/;
+if(!x.match(re))
+{
+   alert("Invalid Email Format")
+}
+else if(!y.match(rer))
+{
+    alert("Invalid Name Format")
+}
+else if(!z.match(rer))
+{
+    alert("Invalid Last Name Format")
+}
+else
+{
+	  alert("Thanks for visiting!!your suggestions are highly valuable :)")
+}
+
+}
+	  </script>
+</head>
+
+
+<body>
+<p><u><i>Did you like the project?</u></i></p>
+<p><b>Please fill the following details:</p></b>
+<h3>Send Email to AMAN JHA</h3>
+<form action="MAILTO:jhaaman3333@outlook.com" name="myform" method="post" enctype="text/plain" onsubmit="return(validator())">
+
+First name - <input type="text" name="firstname" required /><br>
+<br>
+Last name - <input type="text" name="lastname" required />
+<br><br>
+Sex-<br>
+<input type="radio" name="sex" value="male" /> Male<br />
+<input type="radio" name="sex" value="female" /> Female<br><br>
+Your Email ID - <input type="text" name="Email" required/><br><br>
+Suggestions- <input type="text" name="Did you like this project?" /><br>
+<br>
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+
+
+		
+
+<p align="center" class="validate">Design by <span class="style1">AMAN JHA</span>.<br />
+ </p>
+<body>
+</html>
